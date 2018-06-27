@@ -1,10 +1,6 @@
 //Graphically minimized modal of quiz program.
 //Program related to quizteam.Written by Santos Gurung
-//Warning:-
-/*   Th is computer program is protected by copyright law and cyber law.
-      Copying whole or a part of the program may result
-*® ©   © to severe civil & criminal penalties and will be prosecuted
-  ® ™   to the maximum extent possible under the law */
+
 #include<conio.h>
 #include<stdio.h>
 #include<dos.h>
@@ -57,23 +53,23 @@ getche();
 }
 correctanswer()
 {
- cout<<"\nøGood it is correct"<<endl;
+ cout<<"\nÃ¸Good it is correct"<<endl;
     sound_win();
     score=score+100;
-    cout<<"øScore is  "<<score<<endl;         delay(1500);
+    cout<<"Ã¸Score is  "<<score<<endl;         delay(1500);
 //    getche();
     return(0);
 }
 wronganswer()
 {
-cout<<"\nøWrong so exit from block."<<endl;
+cout<<"\nÃ¸Wrong so exit from block."<<endl;
     sound_loose();   delay(1500);
 //    getche();
     return(0);
 }
 fiftyshow()
 {
-    cout<<"\nøFifty-fifty (50-50)"<<endl;
+    cout<<"\nÃ¸Fifty-fifty (50-50)"<<endl;
     sound_lifeline();  delay(1500);
 //    getche();
     fifty=fifty+3;
@@ -81,7 +77,7 @@ fiftyshow()
 }
 fiftyout()
 {
-    cout<<"\nøSorry,50-50 has been already used."<<endl;
+    cout<<"\nÃ¸Sorry,50-50 has been already used."<<endl;
     sound_loose();  delay(1500);
  // getche();
     return(0);
@@ -90,10 +86,10 @@ space()              //loading and spacing function
 {
 int z;
 cout<<endl;
-//cout<<"ÛÛÛÛÛÛÛÛ";
+//cout<<"Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›";
 for(z=0;z<=79;z++)
 {
- cprintf("Ü");
+ cprintf("Ãœ");
  delay(6);
 // z++;
  }
@@ -103,7 +99,7 @@ return(0);
 // second space
 space2()
 {
-cout<<"\n\nYou choose ¯ ";
+cout<<"\n\nYou choose Â¯ ";
 return(0);
 }
 sound_win()
@@ -136,7 +132,7 @@ return(0);
 }
 lifeline_audience()
 {
-cout<<"øAudience vote";
+cout<<"Ã¸Audience vote";
 return(0);
 }
 //no use of audience vote
@@ -151,31 +147,31 @@ return(0);
 }
 audienceshow()
 {
-    cout<<"\nøAudience Vote"<<endl;
+    cout<<"\nÃ¸Audience Vote"<<endl;
     audience=5;   delay(1500);
 //    getche();
     return(0);
 }
 audienceout()
 {
-cout<<"\nøAudience Vote used already."<<endl;   delay(1500);
+cout<<"\nÃ¸Audience Vote used already."<<endl;   delay(1500);
 // getche();
  return(0);
 }
 lifeline_fifty()
 {
-cout<<" ø50-50  ";
+cout<<" Ã¸50-50  ";
 return(0);
 }
 optionsare()
 {
-cout<<"\nøOptions are 1,2,3,4,5 & 6."<<endl;     delay(1500);
+cout<<"\nÃ¸Options are 1,2,3,4,5 & 6."<<endl;     delay(1500);
 //getche();
 return(0);
 }
 optionsare5()
 {
-cout<<"\nøOptions are 1,2 & 6."<<endl;    delay(1500);
+cout<<"\nÃ¸Options are 1,2 & 6."<<endl;    delay(1500);
 //getche();
 return(0);
 }
@@ -268,11 +264,11 @@ ruleblock()
 {  int xs;  _setcursortype(_NOCURSOR);
     cout<<"\n\n\n\n ";
     space();
-    cout<<"      øSorry,you have already explored this block."<<endl;
-    cout<<"      øBy the rule of game,once entered block can't be again explored."<<endl;
+    cout<<"      Ã¸Sorry,you have already explored this block."<<endl;
+    cout<<"      Ã¸By the rule of game,once entered block can't be again explored."<<endl;
 cout<<"\n\n\n\n\n";
 for(xs=0;xs<=79;xs++)
-{ cprintf("Ü"); delay(4);  }
+{ cprintf("Ãœ"); delay(4);  }
 sound_loose();
 sound_loose();
 getch();
@@ -381,7 +377,7 @@ errorselect2:
 setbkcolor(BLACK);
 setfillstyle(SOLID_FILL,BLUE);   setcolor(LIGHTGRAY);
 bar3d(-5,0, 650,70,0,0);   bar3d(-5,400, 650, 500,0,0);
-setcolor(LIGHTGRAY); outtextxy(55,30,"ÎQuiz Program 2005e"); outtextxy(500,430,"ØVersion 1.0.25 ");
+setcolor(LIGHTGRAY); outtextxy(55,30,"ÃŽQuiz Program 2005e"); outtextxy(500,430,"Ã˜Version 1.0.25 ");
 setcolor(LIGHTGRAY); outtextxy(55,430," Press  Tab(Up Down) & Spacebar(Enter)");
 errorselect:
 if(choice==1)
@@ -536,49 +532,49 @@ cout<<"\n\n\n\n\n\n";   cout<<"\t\t\t\t\t\t";
 settextstyle(0,HORIZ_DIR,1);
 setcolor(BLACK);
 cout<<"(1)Highscore record:-"<<endl;       invitab();
-cout<<"ùHighscore:"<<highscores<<endl;  invitab();
-cout<<"ùPlayer   :"<<highname<<endl<<endl;
+cout<<"Ã¹Highscore:"<<highscores<<endl;  invitab();
+cout<<"Ã¹Player   :"<<highname<<endl<<endl;
 cout<<"\t\t\t\t\t\t";
 cout<<"(2)Your Record:-"<<endl;   invitab();
-cout<<"ùCurrent Player: "<<nameuser<<endl;   invitab();
+cout<<"Ã¹Current Player: "<<nameuser<<endl;   invitab();
 //cout<<""<<endl;                     invitab();
-cout<<"ùInfo.Tech   :"<<itscore<<endl;  invitab();
-cout<<"ùHistory&Geo :"<<gscore<<endl;   invitab();
-cout<<"ùScience     :"<<sscore<<endl;   invitab();
-cout<<"ùArts,Entern :"<<aescore<<endl;  invitab();
-cout<<"ùImp.Dates   :"<<idscore<<endl;
+cout<<"Ã¹Info.Tech   :"<<itscore<<endl;  invitab();
+cout<<"Ã¹History&Geo :"<<gscore<<endl;   invitab();
+cout<<"Ã¹Science     :"<<sscore<<endl;   invitab();
+cout<<"Ã¹Arts,Entern :"<<aescore<<endl;  invitab();
+cout<<"Ã¹Imp.Dates   :"<<idscore<<endl;
 cout<<endl;                             invitab();
-cout<<"äTotal Score :"<<totscore<<endl; invitab();
-cout<<"äQuestions Attended:"<<totquestion<<endl;
+cout<<"Ã¤Total Score :"<<totscore<<endl; invitab();
+cout<<"Ã¤Questions Attended:"<<totquestion<<endl;
 cout<<endl;
 cout<<"\t\t\t\t\t\t";
 cout<<"(3)Comments:-";
 cout<<endl;                            invitab();
 if(totscore<=300)
 {
-cout<<"ùVery very very low in G.k.";
+cout<<"Ã¹Very very very low in G.k.";
 }
 
 else if(totscore<=500)
 {
-cout<<"ùVery very low in G.k.";
+cout<<"Ã¹Very very low in G.k.";
 }
 else if(totscore<=1000)
 {
-cout<<"ùGood,but try hard.";
+cout<<"Ã¹Good,but try hard.";
 }
 else if(totscore<=2000)
 {
-cout<<"ùVery good,but try hard.";
+cout<<"Ã¹Very good,but try hard.";
 }
 else if(totscore<4000)
 {
-cout<<"ùExecellent,you r a genius"<<endl;   invitab();
-cout<<"ùVery very much impressed.";
+cout<<"Ã¹Execellent,you r a genius"<<endl;   invitab();
+cout<<"Ã¹Very very much impressed.";
 }
 else if(totscore>=4000)
 {
-cout<<"ùExcellent,New Einstein.";
+cout<<"Ã¹Excellent,New Einstein.";
 }
 cout<<endl<<endl;  cout<<"\t\t\t\t\t\t";
 cout<<"(4)Press any key to Exit"<<endl;
@@ -601,42 +597,42 @@ outtextxy(5,lop-100,"Thanx for Evaluating.");
 settextstyle(0,HORIZ_DIR,1);
 outtextxy(80,lop,"Programmers");
 setfillstyle(1,0);
-outtextxy(130,lop+20,"ùSantos  Gurung");
-outtextxy(130,lop+30,"ùSuresh  Sapkota");
-outtextxy(130,lop+40,"ùRohan   Thapa");
-outtextxy(130,lop+50,"ùKrishna Tamang");
-outtextxy(130,lop+60,"ùMahesh  Gurung");
+outtextxy(130,lop+20,"Ã¹Santos  Gurung");
+outtextxy(130,lop+30,"Ã¹Suresh  Sapkota");
+outtextxy(130,lop+40,"Ã¹Rohan   Thapa");
+outtextxy(130,lop+50,"Ã¹Krishna Tamang");
+outtextxy(130,lop+60,"Ã¹Mahesh  Gurung");
 outtextxy(80,lop+90,"Lead Programmer");
-outtextxy(130,lop+110,"ùSantos  Gurung");
+outtextxy(130,lop+110,"Ã¹Santos  Gurung");
 outtextxy(80,lop+130,"Questions Collector");
-outtextxy(130,lop+150,"ùSuresh Sapkota");
+outtextxy(130,lop+150,"Ã¹Suresh Sapkota");
 outtextxy(80,lop+170,"Questions Corrections");
-outtextxy(130,lop+190,"ùKrishna Tamang");
-outtextxy(130,lop+200,"ùRohan Thapa");
+outtextxy(130,lop+190,"Ã¹Krishna Tamang");
+outtextxy(130,lop+200,"Ã¹Rohan Thapa");
 outtextxy(80,lop+220,"Questions options");
-outtextxy(130,lop+240,"ùRohan Thapa");
+outtextxy(130,lop+240,"Ã¹Rohan Thapa");
 outtextxy(80,lop+260,"50-50 Idea");
-outtextxy(130,lop+270,"ùSuresh Sapkota");
-outtextxy(130,lop+280,"ùRohan Thapa");
+outtextxy(130,lop+270,"Ã¹Suresh Sapkota");
+outtextxy(130,lop+280,"Ã¹Rohan Thapa");
 outtextxy(80,lop+300,"Audience Vote idea");
-outtextxy(130,lop+310,"ùRohan Thapa");
-outtextxy(130,lop+320,"ùSuresh Sapkota");
+outtextxy(130,lop+310,"Ã¹Rohan Thapa");
+outtextxy(130,lop+320,"Ã¹Suresh Sapkota");
 outtextxy(80,lop+340,"Text Animation");
-outtextxy(130,lop+350,"ùSantos gurung");
+outtextxy(130,lop+350,"Ã¹Santos gurung");
 outtextxy(80,lop+370,"Sound Codes");
-outtextxy(130,lop+380,"ùMahesh Gurung");
-outtextxy(130,lop+390,"ùSuresh Sapkota");
+outtextxy(130,lop+380,"Ã¹Mahesh Gurung");
+outtextxy(130,lop+390,"Ã¹Suresh Sapkota");
 outtextxy(80,lop+410,"Code correction");
-outtextxy(130,lop+420,"ùSantos Gurung");
+outtextxy(130,lop+420,"Ã¹Santos Gurung");
 outtextxy(80,lop+440,"Question Source");
-outtextxy(130,lop+450,"ùDifferent G.k Books");
+outtextxy(130,lop+450,"Ã¹Different G.k Books");
 outtextxy(80,lop+470,"Test Players");
-outtextxy(130,lop+480,"ùDikpal Dura,Dan bdr grg");
-outtextxy(130,lop+490,"ùBabita,Dan bdr grg");
-outtextxy(130,lop+500,"ùPrakash,Dan bdr grg");
-outtextxy(130,lop+510,"ùDikpal Dura,Dan bdr grg");
+outtextxy(130,lop+480,"Ã¹Dikpal Dura,Dan bdr grg");
+outtextxy(130,lop+490,"Ã¹Babita,Dan bdr grg");
+outtextxy(130,lop+500,"Ã¹Prakash,Dan bdr grg");
+outtextxy(130,lop+510,"Ã¹Dikpal Dura,Dan bdr grg");
 outtextxy(80,lop+530,"Special Thanks");
-outtextxy(130,lop+540,"ùRaju Tiwari Sir");
+outtextxy(130,lop+540,"Ã¹Raju Tiwari Sir");
 outtextxy(80,lop+560,"For any queries mail at");
 outtextxy(80,lop+570,"    santosgurung07@hotmail.com");
 outtextxy(80,lop+580,"    quizteam07@hotmail.com");
